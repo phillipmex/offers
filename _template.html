@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>{OFFER_NAME}</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; max-width: 40rem;
+         margin: 3rem auto; padding: 0 1.25rem; line-height: 1.6; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  .tag { color: #777; margin-top: 0; }
+  .price { font-size: 1.25rem; font-weight: 600; margin: 1.5rem 0 .5rem; }
+  a.cta { display: inline-block; background: #4b6ef5; color: #fff; padding: .7rem 1.4rem;
+          border-radius: 8px; text-decoration: none; font-weight: 600; }
+  ul { padding-left: 1.2rem; }
+  footer { margin-top: 3rem; font-size: .85rem; color: #888; border-top: 1px solid #ccc3;
+           padding-top: 1rem; }
+</style>
+</head>
+<body>
+<h1>{OFFER_NAME}</h1>
+<p class="tag">{TAGLINE}</p>
+<p>{PITCH_PARAGRAPH}</p>
+<ul>
+{DELIVERABLE_BULLETS}
+</ul>
+<p class="price">{PRICE_LINE}</p>
+<p><a class="cta" href="{STRIPE_URL}">{CTA_LABEL}</a></p>
+<p>Questions first? Just reply to my email — no calls needed, everything is delivered in writing.</p>
+<footer>
+  Independent service by Phillip — not affiliated with or endorsed by {NOT_AFFILIATED}.
+  Payment handled by Stripe. If you got an email from me and want no further contact,
+  one reply with "unsubscribe" is enough.
+</footer>
+</body>
+</html>
